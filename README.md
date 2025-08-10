@@ -110,4 +110,5 @@ To adjust which assignment the script checks and set the deadline, edit the `ASS
 ### **Contact**
 
 **Name:** Arjuna Caleb Gyan
-**Email:** [a.gyan@alustudent.com](mailto:a.gyan@alustudent.com)
+
+**Email:** a.gyan@alustudent.com
