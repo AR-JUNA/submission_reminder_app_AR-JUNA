@@ -1,51 +1,62 @@
-**Submission Reminder System**  
-A little helper to keep us on track!  
+## **Submission Reminder System**
 
-This simple but mighty shell script checks who’s turned in their assignments and who still owes us their work. It’s our friendly, no-stress way to send gentle nudges before deadlines sneak up.
+*A little helper to keep us on track!*
 
-### How It Works  
-Our reminder system follows a simple flow:
-
-- startup.sh → The big red “Start” button . Run this, and the whole process begins.
-
-- app/reminder.sh → The brain . Reads our configuration and checks the submissions.
-
-- modules/functions.sh → The toolbox . Holds functions like check_submissions that do the actual checking.
-
-- config/config.env → Our settings board . We tell it which assignment to check and how many days are left.
-
-- assets/submissions.txt → Our class list  with all names, assignments, and statuses.
-
-### File Structure  
----  
-submission_reminder_TEAM/  
-├── app/  
-│   └── reminder.sh  
-├── assets/  
-│   └── submissions.txt  
-├── config/  
-│   └── config.env  
-├── modules/  
-│   └── functions.sh  
-└── startup.sh  
+This simple yet powerful shell script keeps tabs on assignment submissions—showing who’s submitted their work and who still needs a friendly nudge. It’s a no-pressure reminder system to help everyone stay ahead of deadlines.
 
 ---
 
-### Prerequisites  
+### **How It Works**
 
-- Unix-like OS (Linux or macOS)  
+Our reminder system follows a straightforward process:
 
-- Bash shell installed  
+* **`startup.sh`** → The big red “Start” button. Run this to kick things off.
 
-### Getting Started  
+* **`app/reminder.sh`** → The brain. Reads our config and checks who’s submitted what.
 
-Run the main script:  
+* **`modules/functions.sh`** → The toolbox. Contains functions like `check_submissions` that handle the core logic.
+
+* **`config/config.env`** → Our settings board. Here we define which assignment to check and how many days remain.
+
+* **`assets/submissions.txt`** → Our class list. Contains all names, assignments, and submission statuses.
+
+---
+
+### **File Structure**
+
+```
+submission_reminder_TEAM/
+├── app/
+│   └── reminder.sh
+├── assets/
+│   └── submissions.txt
+├── config/
+│   └── config.env
+├── modules/
+│   └── functions.sh
+└── startup.sh
+```
+
+---
+
+### **Prerequisites**
+
+* Unix-like OS (Linux or macOS)
+* Bash shell installed
+
+---
+
+### **Getting Started**
+
+To run the script, simply execute:
 
 ```
 ./startup.sh
 ```
 
-### Example Output  
+---
+
+### **Example Output**
 
 ```
 Assignment: Shell Navigation
@@ -54,41 +65,49 @@ Days remaining to submit: 2 days
 Checking submissions in ./assets/submissions.txt
 Reminder: Chinemerem has not submitted the Shell Navigation assignment!
 Reminder: Divine has not submitted the Shell Navigation assignment!
-Reminder: Daniel has not submitted the Shell Navigation assignment!  
-Reminder: Olivia has not submitted the Shell Navigation assignment!  
----  
+Reminder: Daniel has not submitted the Shell Navigation assignment!
+Reminder: Olivia has not submitted the Shell Navigation assignment!
+```
 
-### Our Student List  
-
-Here’s the exact list we worked with:  
----
-student, assignment, submission status  
-Chinemerem, Shell Navigation, not submitted  
-Chiagoziem, Git, submitted  
-Divine, Shell Navigation, not submitted  
-Anissa, Shell Basics, submitted  
-Aline, Git Basics, submitted  
-Kevin, SQL Queries, not submitted  
-Naomi, HTML & CSS, submitted  
-Patrick, Machine Learning, not submitted  
-Grace, Cloud Computing, submitted  
-Daniel, Shell Navigation, not submitted  
-Clara, Data Visualization, submitted  
-Victor, Shell Navigation, submitted  
-Samuel, Artificial Intelligence, not submitted  
-Olivia, Shell Navigation, not submitted  
 ---
 
-### Updating the list of students 
+### **Our Student List**
 
-Edit `assets/submissions.txt` in the same format.
+This is the current dataset in use:
 
-### Customization
+```
+student, assignment, submission status
+Chinemerem, Shell Navigation, not submitted
+Chiagoziem, Git, submitted
+Divine, Shell Navigation, not submitted
+Anissa, Shell Basics, submitted
+Aline, Git Basics, submitted
+Kevin, SQL Queries, not submitted
+Naomi, HTML & CSS, submitted
+Patrick, Machine Learning, not submitted
+Grace, Cloud Computing, submitted
+Daniel, Shell Navigation, not submitted
+Clara, Data Visualization, submitted
+Victor, Shell Navigation, submitted
+Samuel, Artificial Intelligence, not submitted
+Olivia, Shell Navigation, not submitted
+```
 
-Open `config/config.env` and edit the `ASSIGNMENT` variable.
+---
 
-### Contact:  
+### **Updating the Student List**
 
-Name: Arjuna Caleb Gyan  
+To make changes, edit the `assets/submissions.txt` file using the same format shown above.
 
-Email: a.gyan@alustudent.com 
+---
+
+### **Customization**
+
+To adjust which assignment the script checks and set the deadline, edit the `ASSIGNMENT` variable in `config/config.env`.
+
+---
+
+### **Contact**
+
+**Name:** Arjuna Caleb Gyan
+**Email:** [a.gyan@alustudent.com](mailto:a.gyan@alustudent.com)
