@@ -2,7 +2,7 @@
 
 *A little helper to keep us on track!*
 
-This simple yet powerful shell script keeps tabs on assignment submissions—showing who’s submitted their work and who still needs a friendly nudge. It’s a no-pressure reminder system to help everyone stay ahead of deadlines.
+This simple yet powerful shell script keeps tabs on assignment submissions, showing who’s submitted their work and who still needs a friendly nudge. It’s a no-pressure reminder system to help everyone stay ahead of deadlines.
 
 ---
 
